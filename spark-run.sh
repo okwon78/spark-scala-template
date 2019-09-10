@@ -3,4 +3,4 @@
 spark-submit --master yarn \
              --deploy-mode cluster \
              --class SparkApp \
-             /path/to/example.jar
+             /home/hadoop/spark-scala-template/spark-scala-template-assembly-0.1.jar 

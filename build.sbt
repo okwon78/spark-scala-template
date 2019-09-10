@@ -15,3 +15,8 @@ libraryDependencies += "org.apache.spark" %% "spark-streaming" % "2.4.4" % "prov
 libraryDependencies += "org.apache.spark" %% "spark-mllib" % "2.4.4" % "runtime"
 // https://mvnrepository.com/artifact/mysql/mysql-connector-java
 libraryDependencies += "mysql" % "mysql-connector-java" % "5.1.16"
+
+assemblyMergeStrategy in assembly := {
+ case PathList("META-INF", xs @ _*) => MergeStrategy.discard
+ case x => MergeStrategy.first
+}
