@@ -8,6 +8,7 @@ import org.apache.spark.sql.types.{StringType, StructType}
 import scala.collection.mutable.{ListBuffer, Seq}
 
 object SparkApp {
+
   def get_dirnames(days: Int, prefix: String): Seq[String] = {
 
     val dayList = new ListBuffer[String]()
