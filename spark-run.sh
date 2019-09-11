@@ -61,7 +61,7 @@ else
     SOURCE_PATH=$7
 fi
 
-echo SOURCE_PATH: $SOURCE_BUCKET
+echo SOURCE_PATH: SOURCE_PATH
 
 if [ -z "$8" ]
 then
